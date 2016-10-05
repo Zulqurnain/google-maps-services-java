@@ -119,6 +119,13 @@ public class NearbySearchRequest
   public NearbySearchRequest type(PlaceType type) {
     return param("type", type);
   }
+        
+  /**
+   * type restricts the results to places matching the specified type.
+   */
+  public NearbySearchRequest type(String type) {
+    return param("type", type);
+  }
 
   @Override
   protected void validateRequest() {
